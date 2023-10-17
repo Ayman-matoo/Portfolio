@@ -1,4 +1,8 @@
 /* Design tokens */
+*{
+  margin: 0px;
+  padding: 0px;
+}
 :root {
   --paper: hsla(251, 28%, 88%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
@@ -8,19 +12,20 @@
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
 }
 /* General Styles */
-html,
+/* html,
 body {
   scroll-behavior: smooth;
   background: var(--paper);
-  color: var(--ink);
+  color: black(7, 15, 6, 0.306);
   font-family: var(--font);
-}
-body {
-  display: grid;
-  margin: auto;
-  min-height: 100vh;
-  gap: var(--gap);
-  max-width: var(--container);
+} */
+body{
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  /* height: 100vh; */
+  
 }
 a,
 a:any-link {
@@ -36,22 +41,124 @@ a:focus {
 }
 /* Site header and navigation */
 body > header {
-  background: var(--paper);
+  color:orangered;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1;
+  padding-top: 0.2rem;
+  
+}
+ 
+nav ul li {
+  display:inline-block;
+  list-style: none;
+  margin: 10px, 20px;
+
+}
+.image {
+   padding: 1px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+
+nav li {
+    display: inline-block;
+    height: 100%;
+    width: 10%;
 }
 nav ul {
-  display: flex;
-  list-style: none;
-  gap: var(--gap);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav li {
+    display: inline-block;
+    height: 100%;
+    width: 10%;
+}
+
+h3  {
+  font-size: 15px;
+  color:green;
 }
 
 /* Text readability */
-section p {
-  line-height: 1.5;
-  max-width: 55ch;
+section p{
+  text-align: 1.5;
 }
+
+.content1 {
+  margin-top: 8%;
+  margin-left: 6%;
+}
+.project{
+  margin-left: 8%
+  
+}
+.content1 h1{
+  font-size: 40px;
+  color: black;
+
+}
+.content1 h3{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.content1 span{
+  
+  color:chocolate ;
+  margin-bottom: 10px;
+}
+.social-icon {
+  margin-top: 8%;
+  
+  
+}
+.bont{
+  background:rgba(255, 68, 0, 0.705) ;
+  border-radius: 4px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  border: 1px solid transparent;
+
+}
+.bont:hover{
+  background: transparent;
+  color: orangered;
+  border: 1px solid orangered;
+}
+
+
+.backimg2{
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 60%
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
